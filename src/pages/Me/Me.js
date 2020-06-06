@@ -8,7 +8,7 @@ const Me = ({ user }) => {
 		<Layout user={user}>
 			<div>
 				<SectionTitle>About Me</SectionTitle>
-				<Paragraph>{user.basics.summary}</Paragraph>
+				<Paragraph>{user.summary}</Paragraph>
 			</div>
 			<div>
 				<SectionTitle>Skills</SectionTitle>

@@ -1,14 +1,18 @@
 import React from 'react'
 
+import Spinner from '../Spinner'
+
 import { Switch, Route } from 'react-router-dom'
 
-import Me from './Me/index.js'
-import Projects from './Projects/index.js'
-import Work from './Work/index.js'
-import Education from './Education/index.js'
+import Me from './Me'
+import Projects from './Projects'
+import Work from './Work'
+import Education from './Education'
+import NoRoute from '../components/NoRoute'
 
-const Routes = ({ user }) => {
-	return (
+const Routes = ({ user, isLoading }) => {
+	console.log('User object inside Routes: ', user)
+	return !isLoading ? (
 		<Switch>
 			<Route exact path='/'>
 				<Me user={user} />
@@ -22,7 +26,10 @@ const Routes = ({ user }) => {
 			<Route path='/education'>
 				<Education user={user} />
 			</Route>
+			<Route component={NoRoute} />
 		</Switch>
+	) : (
+		<Spinner />
 	)
 }
 

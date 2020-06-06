@@ -10,33 +10,29 @@ const UserHeader = ({ user }) => {
 	return (
 		<HeaderContainer isHome={location.pathname === '/'} L>
 			<Header>
-				<Image src={user.basics.picture} />
+				<Image src={user.picture} />
 				<div>
-					<h2>{user.basics.name}</h2>
+					<h2>{user.name}</h2>
 					<h4>
-						<a
-							href={`https://gitconnected.com/${user.basics.username}`}
-							target='_blank'
-							rel='noreferrer noopener'
-						>
-							@{user.basics.username}
+						<a href={`https://gitconnected.com/${user.username}`} target='_blank' rel='noreferrer noopener'>
+							@{user.username}
 						</a>
 					</h4>
-					<p>{user.basics.label}</p>
-					<p>Coding in {user.basics.region}</p>
-					<p>{user.basics.yearsOfExperience} years of experience as a developer</p>
-					<p>{user.basics.headlline}</p>
+					<p>{user.label}</p>
+					<p>Coding in {user.region}</p>
+					<p>{user.yearsOfExperience} years of experience as a developer</p>
+					<p>{user.headlline}</p>
 					<p>
 						Blog: {' '}
-						<a href={user.basics.blog} target='_blank' rel='noreferrer noopener'>
-							{user.basics.blog}
+						<a href={user.blog} target='_blank' rel='noreferrer noopener'>
+							{user.blog}
 						</a>
 					</p>
 				</div>
 			</Header>
 			<div>
 				<ViewResumeLink
-					href={`https://gitconnected.com/${user.basics.username}/resume`}
+					href={`https://gitconnected.com/${user.username}/resume`}
 					target='_blank'
 					rel='noopener noreferrer'
 				>
