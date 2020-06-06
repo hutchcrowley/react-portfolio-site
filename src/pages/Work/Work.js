@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 import { SectionTitle, Paragraph } from '../../styles/styles'
 import { WorkItem, WorkTitle, JobTitle } from './styles'
 

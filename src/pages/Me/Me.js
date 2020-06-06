@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 import { SectionTitle, Paragraph, Pill } from '../../styles/styles'
 import { ProfileLink } from './styles'
 
@@ -8,7 +8,7 @@ const Me = ({ user }) => {
 		<Layout user={user}>
 			<div>
 				<SectionTitle>About Me</SectionTitle>
-				<Paragraph>{user.summary}</Paragraph>
+				<Paragraph>{user.basics.summary}</Paragraph>
 			</div>
 			<div>
 				<SectionTitle>Skills</SectionTitle>
