@@ -1,7 +1,7 @@
 import React from 'react'
 import { User32, Code32, Portfolio32, Education32 } from '@carbon/icons-react'
 
-import { Container, Spacer, NavWrapper, NavButton, NavLink } from './style'
+import { Container, Spacer, NavWrapper, NavButton, NavLink } from './styles'
 
 const MobileNav = () => {
 	return (
@@ -9,7 +9,7 @@ const MobileNav = () => {
 			<Spacer />
 			<NavWrapper>
 				<NavLink to='/'>
-					<NavButton hasIconOnly renderIcon={user32} iconDescription='Me' tooltipPosition='bottom' />
+					<NavButton hasIconOnly renderIcon={User32} iconDescription='Me' tooltipPosition='bottom' />
 				</NavLink>
 				<NavLink to='/projects'>
 					<NavButton hasIconOnly renderIcon={Code32} iconDescription='Projects' tooltipPosition='bottom' />

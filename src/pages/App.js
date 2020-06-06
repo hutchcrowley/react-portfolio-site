@@ -10,14 +10,17 @@ import Education from './Education'
 import axios from 'axios'
 
 function App() {
-	const [ resData, setResData ] = useState({})
+	const [ user, setUser ] = useState({})
 
 	useEffect(() => {
 		axios
 			.get(`https://gitconnected.com/v1/portfolio/hutchcrowley`)
 			.then(res => {
-				setResData(res.data)
-				console.log('Data returned from API: ', resData)
+				res.json()
+			})
+			.then(user => {
+				setUser(user)
+				console.log('Data returned from API: ', user)
 			})
 			.catch(err => console.log('Error: ', err))
 	}, [])
@@ -25,16 +28,16 @@ function App() {
 	return (
 		<Switch>
 			<Route exact path='/'>
-				<Me user={resData} />
+				<Me user={user} />
 			</Route>
 			<Route path='/projects'>
-				<Projects user={resData} />
+				<Projects user={user} />
 			</Route>
 			<Route path='/work'>
-				<Work user={resData} />
+				<Work user={user} />
 			</Route>
 			<Route path='/education'>
-				<Education user={resData} />
+				<Education user={user} />
 			</Route>
 		</Switch>
 	)

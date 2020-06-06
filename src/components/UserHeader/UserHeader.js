@@ -4,7 +4,7 @@ import { ArrowRight16 } from '@carbon/icons-react'
 
 import { HeaderContainer, Header, Image, ViewResumeLink } from './styles'
 
-const Header = ({ user }) => {
+const UserHeader = ({ user }) => {
 	const location = useLocation()
 
 	return (
@@ -48,4 +48,4 @@ const Header = ({ user }) => {
 	)
 }
 
-export default Header
+export default UserHeader

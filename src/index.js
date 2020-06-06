@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './pages/App'
-import * as serviceWorker from '../serviceWorker'
+import * as serviceWorker from './serviceWorker'
+
+import './styles/index.scss'
 
 ReactDOM.render(
 	<Router>

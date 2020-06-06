@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import Header from '../Header/Header'
+import Header from '../UserHeader/UserHeader'
 import MobileNav from '../MobileNav/MobileNav'
 
 import { StyledContent } from './styles'
@@ -17,3 +17,5 @@ const Layout = ({ user, children }) => {
         </>
     )
 }
+
+export default Layout

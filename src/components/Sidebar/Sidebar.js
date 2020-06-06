@@ -21,7 +21,7 @@ const Sidebar = () => {
 			<SideNavItems>
 				{items.map(i => (
 					<SideNavLink
-						isActive={location.pathname === '/' && i.path === '/' ? true : loacation.pathname === i.path}
+						isActive={location.pathname === '/' && i.path === '/' ? true : location.pathname === i.path}
 						element={Link}
 						to={i.path}
 						key={i.name}
