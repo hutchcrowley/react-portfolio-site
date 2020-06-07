@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Routes from './pages/Routes'
+import Spinner from './components/Spinner'
 
 import axios from 'axios'
+
+import './styles/styles'
+import './styles/index.css'
 
 const App = () => {
 	const [ user, setUser ] = useState(null)
@@ -10,21 +14,26 @@ const App = () => {
 
 	useEffect(() => {
 		axios
-			.get('https://gitconnected.com/v1/portfolio/hutchcrowley')
+			.get(`https://gitconnected.com/v1/portfolio/hutchcrowley`)
 			.then(setIsLoading(true))
 			.then(res => {
-				let newUser = res.data
-				console.log('newUser variable in axios API call: ', newUser)
-				setUser(newUser)
+				console.log('result of API call: ', res.data)
+				setUser(res.data)
+				console.log('user variable in axios API call: ', user)
+				setIsLoading(false)
 			})
 			.catch(err => {
-				setIsLoading(false)
 				console.log('Error: ', err)
+				setIsLoading(false)
 			})
-			.then(setIsLoading(false))
 	}, [])
 
-	return <Routes user={user} isLoading={isLoading} />
+	return isLoading && user ? (
+		<>
+			<Routes user={user} />
+		</>
+	) : (
+		<Spinner />
+	)
 }
-
 export default App

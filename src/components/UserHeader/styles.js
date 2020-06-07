@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 1.5rem;
+	border-bottom: 2px solid black;
 
 	@media (max-width: 640px) {
 		display: ${({ isHome }) => (!isHome ? 'none' : 'flex')};
@@ -15,13 +17,14 @@ export const Header = styled.div`
 
 	@media (max-width: 640px) {
 		flex-direction: column;
+		align-items: center;
 	}
 `
 
 export const Image = styled.img`
-	width: 200px;
+	width: 300px;
 	margin-right: 1rem;
-	border-radius: 2px;
+	border-radius: 4px;
 `
 
 export const ViewResumeLink = styled.a`

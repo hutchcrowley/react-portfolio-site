@@ -1,15 +1,28 @@
-@import '@carbon/themes/scss/themes';
+@import '../../node_modules/@carbon/themes/scss/generated/themes.scss';
+@import '../../node_modules/carbon-components/scss/globals/scss/styles.scss';
 $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
 
 
-@import 'carbon-components/scss/globals/scss/styles.scss';
 
+.spinner-center {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
 
+  img {
+    height: inherit;
+    width: inherit;
+  }
+}
 
 
 a {
-  color: $text-04;
+  color: #000;
+  text-decoration: none;
 }
 
 .bx--side-nav__navigation {

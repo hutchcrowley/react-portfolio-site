@@ -8,7 +8,7 @@ const Me = ({ user }) => {
 		<Layout user={user}>
 			<div>
 				<SectionTitle>About Me</SectionTitle>
-				<Paragraph>{user.summary}</Paragraph>
+				<Paragraph>{user.basics.summary}</Paragraph>
 			</div>
 			<div>
 				<SectionTitle>Skills</SectionTitle>
@@ -20,7 +20,7 @@ const Me = ({ user }) => {
 					{user.basics.profiles.map((profile, i) => (
 						<ProfileLink key={profile.network}>
 							{i !== 0 && ' | '}
-							<a href={profile.url} target='_blank' rel='noreferrer noopener'>
+							<a href={profile.url} target='_blank' rel='noreferrer noopener' className='profile-link'>
 								{profile.network}
 							</a>
 						</ProfileLink>
