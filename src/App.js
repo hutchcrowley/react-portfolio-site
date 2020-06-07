@@ -28,7 +28,7 @@ const App = () => {
 			})
 	}, [])
 
-	return isLoading && user ? (
+	return !isLoading && user ? (
 		<>
 			<Routes user={user} />
 		</>
