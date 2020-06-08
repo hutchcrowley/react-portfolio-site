@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 logo.svg
 index.css.map
+.vscode
+.github
