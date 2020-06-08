@@ -7,9 +7,9 @@ import { StyledSideNav } from './styles'
 // array containing teh names and paths for each route. Map over this data to create links dynamically.
 const items = [
 	{ name: 'Me', path: '/' },
-	{ name: 'Projects', path: '/projects' },
-	{ name: 'Work', path: '/work' },
 	{ name: 'Education', path: '/education' },
+	{ name: 'Experience', path: '/experience' },
+	{ name: 'Projects', path: '/projects' },
 ]
 
 const Sidebar = () => {

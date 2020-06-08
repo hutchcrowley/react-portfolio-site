@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Me from './Me/index'
 import Projects from './Projects/index'
-import Work from './Work/index'
+import Experience from './Experience/index'
 import Education from './Education/index'
 import NoRoute from '../components/NoRoute'
 
@@ -13,13 +13,13 @@ const Routes = ({ user }) => {
 		<Router>
 			<Switch>
 				<Route exact path='/'>
-					<Me user={user} />
+					<NoRoute />
 				</Route>
 				<Route path='/projects'>
 					<Projects user={user} />
 				</Route>
-				<Route path='/work'>
-					<Work user={user} />
+				<Route path='/experience'>
+					<Experience user={user} />
 				</Route>
 				<Route path='/education'>
 					<Education user={user} />

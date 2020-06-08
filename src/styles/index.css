@@ -16833,6 +16833,25 @@ a.bx--navigation-link:focus {
   width: inherit;
 }
 
+#no-route {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#no-route h1 {
+  margin-bottom: 1rem;
+}
+#no-route h2 {
+  margin-bottom: 1rem;
+}
+#no-route a {
+  font-size: 14pt;
+}
+
 a {
   color: #000;
   text-decoration: none;

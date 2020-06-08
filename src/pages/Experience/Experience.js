@@ -3,7 +3,7 @@ import Layout from '../../components/Layout/Layout'
 import { SectionTitle, Paragraph } from '../../styles/styles'
 import { WorkItem, WorkTitle, JobTitle } from './styles'
 
-const Work = ({ user }) => {
+const Experience = ({ user }) => {
 	return (
 		<Layout user={user}>
 			<div>
@@ -28,4 +28,4 @@ const Work = ({ user }) => {
 	)
 }
 
-export default Work
+export default Experience

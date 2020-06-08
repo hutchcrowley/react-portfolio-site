@@ -2,8 +2,11 @@ import styled from 'styled-components'
 import { blue } from '@carbon/colors'
 
 export const SectionTitle = styled.h3`
+	margin-left: -1rem;
 	margin-top: 1.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 30pt;
+	font-weight: 200;
 `
 
 export const Paragraph = styled.p`white-space: pre-wrap;`
