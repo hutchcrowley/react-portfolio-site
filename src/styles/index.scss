@@ -3,70 +3,67 @@
 $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
 
-
-
 .spinner-center {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	background-color: #101010;
 
-  img {
-    height: inherit;
-    width: inherit;
-  }
+	img {
+      height: 87%;
+      width: 61%;
+      border-radius: 135%;
+      border: 2px solid white;
+      box-shadow: 154px 31px 5px 57px #193D35, 22px 95px 5px 83px rgba(0, 255, 208, 0.71), -15px -60px 0px 0px rgba(192, 58, 255, 0.34), 10px 10px 7px 61px rgba(68, 60, 209, 0.49),200px 70px 700px 61px #fff;
+	}
 }
 
 #no-route {
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  width: 80vw;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
 
-  h1 {
-margin-bottom: 1rem;
-  }
+	h1 {
+		margin-bottom: 1rem;
+	}
 
-  h2 {
-margin-bottom: 1rem;
-  }
+	h2 {
+		margin-bottom: 1.5rem;
+	}
 
-  a {
-    font-size: 14pt;
-  }
-
+	a {
+		font-size: 16pt;
+		color: blue;
+	}
 }
 
-
 a {
-  color: #000;
-  text-decoration: none;
+	color: #000;
+	text-decoration: none;
 }
 
 .bx--side-nav__navigation {
-  background-color: $ui-background;
+	background-color: $ui-background;
 }
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
- background-color: $ui-01;
- color: $text-04;
+	background-color: $ui-01;
+	color: $text-04;
 }
 
-.bx--side-nav__item:not(.bx--side-nav__item--active)
-> .bx--side-nav__link:hover {
-  background-color: $ui-01;
-  color: $text-04;
+.bx--side-nav__item:not(.bx--side-nav__item--active) > .bx--side-nav__link:hover {
+	background-color: $ui-01;
+	color: $text-04;
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,
-.bx--side-nav__item:not(.bx--side-nav__item--active)
-> .bx--side-nav__link:hover
-> span {
-  color: $text-04;
+.bx--side-nav__item:not(.bx--side-nav__item--active) > .bx--side-nav__link:hover > span {
+	color: $text-04;
 }

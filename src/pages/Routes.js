@@ -13,7 +13,7 @@ const Routes = ({ user }) => {
 		<Router>
 			<Switch>
 				<Route exact path='/'>
-					<NoRoute />
+					<Me user={user} />
 				</Route>
 				<Route path='/projects'>
 					<Projects user={user} />
