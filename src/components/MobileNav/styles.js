@@ -29,4 +29,6 @@ width: 25%;
 export const NavButton = styled(Button)`
 width: 100%;
 justify-content: center;
+border-right: 4px solid #010101;
+
 `

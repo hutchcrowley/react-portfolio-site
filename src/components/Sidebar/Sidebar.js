@@ -18,7 +18,7 @@ const Sidebar = () => {
 
 	return (
 		<StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label='Side navigation'>
-			<SideNavItems>
+			<SideNavItems className='side-nav-item'>
 				{items.map(i => (
 					<SideNavLink
 						isActive={location.pathname === '/' && i.path === '/' ? true : location.pathname === i.path}

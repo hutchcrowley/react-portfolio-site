@@ -16852,13 +16852,15 @@ a.bx--navigation-link:focus {
   margin-bottom: 1.5rem;
 }
 #no-route a {
-  font-size: 16pt;
+  font-size: 12pt;
   color: blue;
 }
 
 a {
   color: #000;
   text-decoration: none;
+  font-size: 15pt;
+  font-weight: normal;
 }
 
 .bx--side-nav__navigation {
@@ -16869,11 +16871,28 @@ a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
   background-color: #262626;
   color: #ffffff;
+  height: 4rem;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active) > .bx--side-nav__link:hover {
   background-color: #262626;
   color: #ffffff;
+  min-height: 6rem;
+}
+
+.bx--side-nav__item {
+  min-height: 4rem;
+  background-color: #101010;
+}
+
+.bx--side-nav__item:hover {
+  min-height: 5rem;
+  background-color: #101010;
+}
+
+.bx--side-nav__link-text {
+  font-size: 15pt;
+  font-weight: normal;
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,

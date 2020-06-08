@@ -7,7 +7,7 @@ const Experience = ({ user }) => {
 	return (
 		<Layout user={user}>
 			<div>
-				<SectionTitle>Work</SectionTitle>
+				<SectionTitle>Experience</SectionTitle>
 				<ul>
 					{user.work.map((work, i) => (
 						<WorkItem key={i}>

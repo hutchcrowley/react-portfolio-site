@@ -14,8 +14,8 @@ const MobileNav = () => {
 				<NavLink to='/projects'>
 					<NavButton hasIconOnly renderIcon={Code32} iconDescription='Projects' tooltipPosition='bottom' />
 				</NavLink>
-				<NavLink to='/work'>
-					<NavButton hasIconOnly renderIcon={Portfolio32} iconDescription='Work' tooltipPosition='bottom' />
+				<NavLink to='/experience'>
+					<NavButton hasIconOnly renderIcon={Portfolio32} iconDescription='Experience' tooltipPosition='bottom' />
 				</NavLink>
 				<NavLink to='/education'>
 					<NavButton
