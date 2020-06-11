@@ -4,24 +4,22 @@ export const HeaderContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 1.5rem;
-	padding-top: 2rem;
-	margin-right: 5rem;
 	border-bottom: 2px solid black;
 
 	@media (max-width: 640px) {
 		display: ${({ isHome }) => (!isHome ? 'none' : 'flex')};
 		flex-direction: column;
+		align-items: center;
+		justify-items: center;
 	}
 `
 
 export const Header = styled.div`
 	display: flex;
-    padding-top: 2rem;
-
-
 	@media (max-width: 640px) {
 		flex-direction: column;
 		align-items: center;
+		justify-items: center;
 	}
 `
 
@@ -31,6 +29,10 @@ export const Image = styled.img`
 	margin-right: 2.5rem;
 	border-radius: 4px;
 	margin-top: -2rem;
+
+	@media (max-width: 640px) {
+		margin: 1rem;
+	}
 `
 
 export const ViewResumeLink = styled.a`

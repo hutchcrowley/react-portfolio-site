@@ -3,6 +3,12 @@
 $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
 
+html,
+body,
+#root {
+	height: auto;
+}
+
 .spinner-center {
 	display: flex;
 	height: 100vh;
@@ -17,6 +23,19 @@ $carbon--theme: $carbon--theme--g100;
       border-radius: 135%;
       border: 2px solid white;
       box-shadow: 154px 31px 5px 57px #193D35, 22px 95px 5px 83px rgba(0, 255, 208, 0.71), -15px -60px 0px 0px rgba(192, 58, 255, 0.34), 10px 10px 7px 61px rgba(68, 60, 209, 0.49),200px 70px 700px 61px #fff;
+	
+	@media (max-width: 640px) {
+		width: 54%;
+		max-height: 30vh;
+		margin: 2rem auto;
+	}
+	
+	}
+
+	@media (max-width: 640px) {
+		display: flex;
+		flex-direction: column;
+	justify-content: flex-start;
 	}
 }
 
@@ -43,11 +62,28 @@ $carbon--theme: $carbon--theme--g100;
 	}
 }
 
+.header-content {
+	
+	@media (max-width: 640px) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 90%;
+		// padding: .5rem 1rem;
+
+		p {
+				font-size: 12pt;	
+		}
+}
+}
 a {
 	color: #000;
 	text-decoration: none;
 	font-size: 15pt;
 	font-weight: normal;
+	@media (max-width: 640px) {
+		font-size: 13pt;
+	}
 }
 
 .bx--side-nav__navigation {

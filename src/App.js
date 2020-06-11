@@ -23,11 +23,11 @@ const App = () => {
 	}, [])
 
 	return user ? (
-		<>
-			<Routes user={user} />
-		</>
+		 <Routes user={user} />
 	) : (
 		<Spinner />
-	)
+		)
+
 }
+
 export default App
