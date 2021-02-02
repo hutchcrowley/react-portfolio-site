@@ -20,7 +20,7 @@ const App = () => {
 			.catch(err => {
 				console.log('Error: ', err)
 			})
-	}, [])
+	}, )
 
 	return user ? (
 		 <Routes user={user} />
